@@ -1,0 +1,199 @@
+:root {
+  --light: #d2b48c;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  -webkit-box-ordinal-group: 1; /* iOS 6-, Safari, Opera*/
+  -moz-box-ordinal-group: 1; /* Firefox*/
+  -ms-flex-order: 1; /* IE 10 */
+  -webkit-order: 1; /* Chrome */
+  -flex-order: 1;
+}
+
+body {
+  background-color: skyblue;
+}
+
+.header {
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-flexbox;
+  background-color: rgb(31, 114, 190);
+  color: var(--white);
+}
+
+.header h1 {
+  font-size: xx-large;
+}
+
+/* the section below controls the navigation bar at the top of the webpage */
+
+nav {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+nav ul li {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+li {
+  display: inline-flex;
+  float: left;
+  color: whitesmoke;
+  text-align: center;
+  padding: 20px 18px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+li a:hover {
+  background-color: var(--light);
+  padding: 5px;
+  color: slategray;
+  position: static;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+p {
+  font-size: 16px;
+}
+/* general styling for body */
+
+#about-me,
+.about-me,
+.my-work,
+.maincard,
+.card {
+  background-color: var(--light);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* about me sedtion styling */
+
+#about-me {
+  width: 0 auto;
+  padding: 10px;
+  border: 10px;
+  border-style: solid;
+  border-color: black;
+  margin: auto;
+  font-size: large;
+}
+
+.about-me {
+  padding-top: 15px;
+  margin: 0;
+  margin-block-end: auto;
+}
+
+.about-me img {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* my work section styling */
+
+.my-work {
+  display: center;
+  font-size: large;
+  padding: auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.maincard {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  padding: 15px;
+  border: 10px;
+  border-style: solid;
+  margin: 0;
+  float: center;
+}
+
+.card {
+  margin: 0;
+  border: 10px;
+  border-style: solid;
+}
+
+div header {
+  font-weight: bolder;
+}
+
+/* contact me section styling */
+
+.contact-me {
+  display: inline-block;
+  width: auto;
+  border: 15px solid limegreen;
+  padding: 50px;
+  margin: 20px;
+  font-size: larger;
+}
+
+.contact-me ul {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.contact-me li,
+.contact-me li a {
+  display: block;
+  color: black;
+}
+
+.contact-me li a:hover {
+  background-color: limegreen;
+  padding: 5px;
+  color: var(--white);
+  position: static;
+}
+
+/* makes for ipad */
+
+@media screen and (max-width: 1024px) {
+  main {
+    flex-direction: column;
+  }
+}
+/* for desktop */
+@media screen and (max-width: 812px) {
+  main {
+    flex-direction: column;
+  }
+}
+
+/* makes for iphone x */
+
+@media screen and (max-width: 768px) {
+  .maincard {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .card {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
