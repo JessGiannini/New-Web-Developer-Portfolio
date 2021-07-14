@@ -14,7 +14,7 @@ This project was prepared using html and css using Visual Studio Code editor. Th
 
 ## Deployed Link
 
-[Click Here for Live Site](https://jessgiannini.github.io/WebDeveloperPortfolio/)
+[Click Here for Live Site](https://github.com/JessGiannini/New-Web-Developer-Portfolio)
 
 ## Author
 
@@ -22,7 +22,7 @@ This project was prepared using html and css using Visual Studio Code editor. Th
 Jessica Giannini
 </h3>
 
-- Portfolio Site ( https://jessgiannini.github.io/WebDeveloperPortfolio/)
+- Portfolio Site (https://github.com/JessGiannini/New-Web-Developer-Portfolio)
 - Github(https://github.com/jessgiannini)
 - LinkedIn (https://www.linkedin.com/in/jessica-aletta-giannini-155b1310/)
 - Updated Resume Coming Soon
