@@ -169,6 +169,10 @@ div header {
   position: static;
 }
 
+#description {
+  color: black;
+}
+
 /* makes for ipad */
 
 @media screen and (max-width: 1024px) {
